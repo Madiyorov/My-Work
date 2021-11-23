@@ -1,0 +1,117 @@
+@media(prefers-color-scheme: dark) {
+    :root{
+        --primary-background: #151437;
+        --primary-text-color: #FFFFFF;
+    }
+
+    body {
+        background: var(--primary-background);
+    }
+
+    .header__nav-logo::before {
+        content: url('../images/logo-dark.png');
+    }
+
+    .header__content-text, .header__toggler-icon {
+        color: var(--primary-text-color);
+    }
+
+    .main__about-text {
+        background: var(--primary-color);
+        color: var(--primary-text-color);
+    }
+
+    .main__about-content {
+        background: var(--primary-background);
+    }
+
+    .main__about-description {
+        color: var(--primary-text-color);
+    }
+
+    .accordion-button.collapsed {
+        background: var(--primary-background) !important;
+    }
+
+    .accordion-item {
+        border: none !important;
+    }
+    .main__works-link, .main__works-content {
+        background: var(--primary-background);
+    }
+
+    .main__works-link.active {
+        color: var(--primary-background);
+    }
+
+    .main__works-text {
+        color: var(--primary-text-color);
+    }
+
+    .footer__link, .footer__contact, .footer__link:hover, .footer__contact:hover {
+        color: var(--primary-text-color);
+    }
+}
+
+@media(max-width: 992px) {
+    .rectangle, .shape {
+        display: none;
+    }
+
+    .header__nav-link, .header__nav-btn {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .main__about-img {
+        width: 100%;
+    }
+
+    .main__about-content {
+        margin-top: 35px;
+    }
+
+    .main__about-text {
+        top: -25px;
+        left: 30px;
+        padding: 20px;
+        font-size: 16px;
+    }
+    .accordion {
+        margin-bottom: 30px;
+    }
+
+    .main__works-content {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main__works-img {
+        object-fit: contain;
+    }
+
+    .main__works-name {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .header__skills-title {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 375px) {
+    .main__about-title {
+        line-height: 45px;
+    }
+
+    .main__about-link {
+        margin: 0 auto;
+    }
+
+    .footer__contact {
+        font-size: 20px
+    }
+}
